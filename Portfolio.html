@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to My Portfolio </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+   /* --------------------------------------CSS Coding -----------------------*/
+    #box{
+        background-color: white;
+        height: fit-content;
+        overflow: hidden;
+       
+
+    }
+   
+  
+    
+    #main{
+        height: 400px;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+    h1{
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+    h2{
+        position: absolute;
+        left: 44%;
+        top: 40%;
+        font-size: 1em;
+    }
+    .img1{
+       height: 300px;
+       width: auto;
+       position: absolute;
+       left: 20%;
+       bottom: 12%;
+
+    }
+    
+    #btn1{
+        position: absolute;
+       
+       left: 45%;
+       bottom: 30%;
+    }
+    #btn2{
+        position: absolute;
+       
+       left: 55%;
+       bottom: 30%;
+    }
+    #about{
+        height: 500px;
+        text-align: center;
+        
+
+    }
+    table{
+        text-align: center;
+    }
+   
+    #skills{
+        height: 300px;
+        text-align: center;
+        margin: 20px;
+    }
+    #prgs{
+        width: 50%;
+        position: relative;
+        margin: auto;
+        background-color: white;
+        
+       
+        height: 35px;
+    }
+    #intr,#proj,#edu{
+        text-align: center;
+        margin: 5px;
+    }
+  
+    .box1,.box2,.box3{
+        height: 300px;
+        width: 300px;
+        border: none;
+        margin: auto;
+    }
+    #cont{
+        text-align: center;
+
+    }
+    button{
+        border: none;
+    }
+    
+    .contact{
+        position: absolute;
+        right: 30%;
+        top: 26%;
+   
+       
+    }
+    .social-btn{
+    
+    display: block;
+    margin: 50%;
+   
+
+}
+#menu-icon{
+    color: blue;
+    cursor: pointer;
+    display: none;
+}
+/*----------------------------Home Responsive----------------*/
+@media only screen and (max-width: 500px) {
+    #box{
+        
+        overflow-x: hidden;
+
+    } .img1 {
+        height: 150px;
+       width: auto;
+       position: absolute;
+       left: 40%;
+       top: 12%;
+    }
+   
+    h1{
+        position: absolute;
+        left: 15%;
+        top: 50%;
+    }
+    h2{
+        position: absolute;
+        left: 30%;
+        top: 65%;
+        font-size: 0.8em;
+    }
+    .contact{
+        position: absolute;
+        right: 32%;
+        top: 70%;
+        display: flex;
+   
+       
+    }
+    .social-btn{
+    
+ 
+    margin: 5px;
+   
+
+}
+#btn1{
+        position: absolute;
+       
+       left: 25%;
+       bottom: 10%;
+    }
+   #btn1 a{
+        text-decoration: none;
+        color: white;
+    }
+    #btn2{
+        position: absolute;
+       
+       left: 60%;
+       bottom: 10%;
+    }
+    
+}
+
+
+
+
+</style>
+<body>
+    <div class="conteiner-fluid" id="box">
+        <!-------------------------- Home Section ----------------------------------->
+            <!-------------------------- Navigation Bar ----------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-danger ">
+            <a class="navbar-brand text-primary" href="#"><i>SAM</i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active text-danger" href="#">Home</a>
+                <a class="nav-item nav-link text-danger" href="#about">About</a>
+                <a class="nav-item nav-link text-danger" href="#edu">Education</a>
+                <a class="nav-item nav-link text-danger" href="#skills">Skills</a>
+                <a class="nav-item nav-link text-danger" href="#proj">Projects</a>
+                <a class="nav-item nav-link text-danger" href="#cont">Contact</a>
+              </div>
+            </div>
+          </nav>
+            <!---xxxxxxxxxxxxxxxxxxxxxxx Navigation Bar xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <div class="row">
+            <div class="col-lg-12 bg-primary" id="main">
+                <h1>Shubham Upadhyay</h1>
+                <h2>Django Developer | ML Engineer</h2>
+                <img src="Images/pic1.jpg" alt="pic1" class="img1">
+                <a href="#about" class="btn btn-danger" id="btn1">Portfolio</a>
+                <a href="Images/resume.pdf" download="resume" class="btn btn-success" id="btn2">Get CV</a>
+<div class="contact">
+<button class="social-btn"> <a href="https://www.facebook.com/profile.php?id=100073651712271" target="_blank"><img src="Images/facebook.png" alt="fb_pic" height="20"></a></button>
+<button class="social-btn"> <a href="https://www.instagram.com/i_am_shubham_upadhyay01" target="_blank"><img src="Images/instagram.png" alt="insta_pic" height="20"></a></button>
+<button class="social-btn"> <a href="https://www.linkedin.com/in/shubham-upadhyay-a7a574195" target="_blank"><img src="Images/linkedin.png" alt="lkdn_pic" height="20"></a></button>
+<button class="social-btn"> <a href="https://github.com/sam221208" target="_blank"><img src="Images/github.png" alt="git_pic" height="20"></a></button></div>
+            </div>
+           
+    </div>
+    <!---xxxxxxxxxxxxxxxxxxxxxxx Home Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <!-------------------------- About Section ----------------------------------->
+    <div class="row">
+        <div class="col-lg-12" id="about">
+            <h3>About Me</h3>
+            <h6>An IT Professional with Experience in Python Programming and AI </h6>
+            <p>Hey there , I am Shubham Upadhyay from Mumbai . Curenntly I am pursuing my post graduation  in Information Technology at Patkar Varde College. I am a specialized django developer and have ability to build and design complex web apps . i am a keen learner of the concepts such as Artificial intelligence and data science . To know more about my work and experience chechkout my project portfolio and online resume. </p>
+           
+            <h3 >Personal Info</h3>
+            <table class=" table table-sm">
+            <tr >
+            <td><b>Full Name :</b> </td>
+            <td>Shubham Upadhyay</td></tr>
+            <tr>
+                <td><b>DOB: </b></td>
+                <td>18/07/2002</td></tr>
+            <tr>
+                <td><b>Email : </b></td>
+                <td>shubhamvupadhyay@gmail.com</td></tr>
+                <tr>
+                    <td><b>Phone : </b></td>
+                    <td>+91---------</td></tr>
+                    <tr>
+                        <td><b>Address :</b> </td>
+                        <td>Mumbai, Maharashtra</td></tr>
+                        <tr>
+                            <td><b>Languages :</b> </td>
+                            <td>Hindi,English</td></tr>
+                            <tr>
+                                <td><b>Hobbies :</b> </td>
+                                <td>Reading,Music Listening,Playing Cricket</td></tr>
+         </table>
+        </div>
+    
+           
+        </div>
+    </div>
+    <!---xxxxxxxxxxxxxxxxxxxxxxx About Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <!-------------------------- Education Section ----------------------------------->
+    <div class="row">
+        <div class="col-lg-12" id="edu">
+            <h3>Education</h3>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="box1">
+                            <img src="Images/gcap.png" alt="pic1" height="40">
+                            <p><b>HSC</b></p>
+                            <p>2015-2016</p><br>
+                            <p>I have completed my HSC from GVPIC Garakhara Varanasi (UP Board) with 82.83% in the year 2016.</p>
+                        </div></div>
+                            <div class="col-lg-3">
+                                <div class="box2">
+                                <img src="Images/gcap.png" alt="pic2" height="40">
+                                <p><b>SSC</b></p>
+                                <p>2017-2018</p><br>
+                                <p>I have completed my SSC from GVPIC Garakhara Varanasi (UP Board) with 67.63% in the year 2018.</p>
+                            
+                            </div></div>
+                            <div class="col-lg-3">
+                                <div class="box3">
+                                <img src="Images/gcap.png" alt="pic3" height="40">
+                                <p><b>BscIT</b></p>
+                                <p>2018-2021</p><br>
+                                <p>I have pursued my graduation in Information technology from Viva College Virar west Mumbai Maharashtra with 8.0 CGPA in the year 2021.</p>
+                            
+                            </div></div>
+                            <div class="col-lg-3">
+                                <div class="box3">
+                                <img src="Images/gcap.png" alt="pic4" height="40">
+                                <p><b>MscIT</b></p>
+                                <p>2021-2023</p><br>
+                                <p>I am pursuing my post graduation in Information technology from Patkar Varde College Goregaon west Mumbai Maharashtra.</p>
+                            
+                            </div></div>
+    
+                        </div>
+    
+         
+           
+        </div>
+    </div>
+<!---xxxxxxxxxxxxxxxxxxxxxxx Education Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <!-------------------------- Skills Section ----------------------------------->
+    <div class="row">
+        <div class="col-lg-12  text-black" id="skills">
+            <h3>Skills</h3>
+            <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 85%">HTML5</div>
+                
+              </div>
+              <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 75%">CSS3</div>
+                
+              </div>
+              <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 60%">Bootstrap4</div>
+                
+              </div>
+              <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 50%">SQL</div>
+                
+              </div>
+              
+              <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 90%">Python</div>
+                
+              </div>
+              <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 60%">Excel</div>
+                
+              </div>
+              <div class="progress" id="prgs">
+            
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="10" style="width: 40%">Power BI</div>
+                
+              </div>
+        </div>
+</div>
+<!---xxxxxxxxxxxxxxxxxxxxxxx Skills Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!-------------------------- Inetrest Section ----------------------------------->
+<div class="row">
+    <div class="col-lg-12" id="intr">
+        <h3>Interests</h3>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="box1">
+                        <img src="Images/coding.png" alt="coding_pic" height="50">
+                        <p>Coding</p><br>
+                        <p>I love Coding and programming concepts, I am an experienced django developer thus most of the projects i have built are web apps using front end technologies such as HTML , CSS and Bootstrap and Python Django Framework.</p>
+                    </div></div>
+                        <div class="col-lg-4">
+                            <div class="box2">
+                            <img src="Images/ai.png" alt="ai_pic" height="50">
+                            <p>Artificial Intelligence</p><br>
+                            <p>I am intrested in learning AI concepts such as Machine Learning , Data science . I have knowledge of data processing and data visualization tools such as Excel, SQL and Power BI. I build ML models using Python Programming.</p>
+                        
+                        </div></div>
+                        <div class="col-lg-4">
+                            <div class="box3">
+                            <img src="Images/db.png" alt="db_pic" height="50">
+                            <p>Database</p><br>
+                            <p> I have knowledge of database management system.I have worked on MYSQL and Sqlite for my projects .Currently I am learning how to clean, process and visualze the patterns of the data for my machine learning experience .  </p>
+                        
+                        </div></div>
+
+                    </div>
+
+     
+       
+    </div>
+</div>
+<!---xxxxxxxxxxxxxxxxxxxxxxx Interest Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!-------------------------- Project Section ----------------------------------->
+<div class="row">
+    <div class="col-lg-12" id="proj">
+        <h3>Projects</h3>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="box1">
+                       
+                        <p><b>Seminar-Hall Booking System</b></p><br>
+                        <p>It is a django based web application where user and admin are the two major modules . User can search and make booking of halls according to their need whereas Admin is resposnible for managing user and halls updates and data.</p>
+                        <button type="button" class="btn btn-danger" id="btn-prj">Github Link &#8594;</button>
+                    </div></div>
+                        <div class="col-lg-4">
+                            <div class="box2">
+                            
+                            <p><b>E-Vehicle Parking</b></p><br>
+                            <p>It is a django web application which has been built to manage the parking lot activites such as mainatining parking lot status and managing incoming and outgoing vehicles. Idea behind the project is to reduce the formalities at parking entry point and save the time .</p>
+                            <button type="button" class="btn btn-primary" id="btn-prj">Github Link &#8594;</button>
+                        </div></div>
+                        <div class="col-lg-4">
+                            <div class="box3">
+                            
+                            <p><b>Student Management System</b></p><br>
+                            <p>It is a python programming based project where student records can be added , deleted and updated and also data can be fetched from the database using search querry.This also contains a login form with the database in MYSQL for Admin Verification.</p>
+                            <button type="button" class="btn btn-success" id="btn-prj">Github Link &#8594;</button>
+                        </div></div>
+
+                    </div>
+
+     
+       
+    </div>
+</div>
+
+<!---xxxxxxxxxxxxxxxxxxxxxxx Project Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!-------------------------- Contact Section ----------------------------------->
+<div class="row">
+    <div class="col-lg-12" id="cont">
+        <h3>Contact</h3>
+        <button> <a href="https://www.facebook.com/profile.php?id=100073651712271" target="_blank"><img src="Images/facebook.png" alt="fb_pic" height="20"></a></button>
+        <button><a href="https://www.instagram.com/i_am_shubham_upadhyay01" target="_blank"> <img src="Images/instagram.png" alt="insta_pic" height="20"></a></button>
+        <button> <a href="https://www.linkedin.com/in/shubham-upadhyay-a7a574195" target="_blank"><img src="Images/linkedin.png" alt="lkd_pic" height="20"></a></button>
+        <button> <a href="https://github.com/sam221208" target="_blank"><img src="Images/github.png" alt="git_pic" height="20"></a></button>
+        <p>&#169 by Shubham Upadhyay 2022</p>
+    </div>
+</div>
+<!---xxxxxxxxxxxxxxxxxxxxxxx Contact Section xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+   
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
